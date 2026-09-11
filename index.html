@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanvi — Fashion &amp; Lifestyle Content Creator | Navi Mumbai</title>
+<meta name="description" content="Tanvi is a fashion &amp; lifestyle content creator based in Navi Mumbai, India, creating outfit styling, aesthetic reels and fit-check content for clothing, jewellery, bag and footwear brands.">
+
+<!-- Editorial serif + clean sans pairing. Falls back gracefully to system fonts if offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================= -->
+<!-- PROGRESS / SCROLL INDICATOR   -->
+<!-- ============================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============================= -->
+<!-- NAVBAR                        -->
+<!-- ============================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="nav-logo">Tanvi</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-nav>Home</a>
+      <a href="#about" class="nav-link" data-nav>About</a>
+      <a href="#content" class="nav-link" data-nav>Content</a>
+      <a href="#collaborate" class="nav-link" data-nav>Collaborate</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta">Let's Work Together</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-links">
+      <a href="#home" data-nav-mobile>Home</a>
+      <a href="#about" data-nav-mobile>About</a>
+      <a href="#content" data-nav-mobile>Content</a>
+      <a href="#collaborate" data-nav-mobile>Collaborate</a>
+    </nav>
+    <a href="#contact" class="mobile-cta" data-nav-mobile>Let's Work Together</a>
+    <div class="mobile-meta">
+      <span>@tanvi_thakur__7</span>
+      <span>Navi Mumbai, India</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= -->
+  <!-- 1. HERO                       -->
+  <!-- ============================= -->
+  <section class="hero" id="home">
+    <div class="hero-mark" aria-hidden="true">Fashion&nbsp;·&nbsp;2026</div>
+
+    <div class="hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Fashion&nbsp;&middot;&nbsp;Lifestyle&nbsp;&middot;&nbsp;Digital Creator</p>
+        <h1 class="hero-title">Tanvi Thakur</h1>
+        <p class="hero-statement">Creating fashion stories that make people stop, scroll &amp; style.</p>
+        <p class="hero-sub">Fashion &amp; lifestyle creator based in Navi Mumbai, crafting clean visuals, aesthetic reels and effortless styling content for modern fashion brands.</p>
+
+        <div class="hero-facts">
+          <div class="hero-fact">
+            <span class="hero-fact-num">7.9K+</span>
+            <span class="hero-fact-label">Followers</span>
+          </div>
+          <div class="hero-fact-divider" aria-hidden="true"></div>
+          <div class="hero-fact">
+            <span class="hero-fact-num">Navi Mumbai</span>
+            <span class="hero-fact-label">India</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Work With Me</a>
+          <a href="#content" class="btn btn-ghost">View Content</a>
+        </div>
+      </div>
+
+      <div class="hero-media" data-reveal>
+        <span class="hero-media-index" aria-hidden="true">01 / Creator</span>
+        <!-- Replace with your own creator image. Recommended: portrait orientation, min 1000x1300px -->
+        <img
+          src="images/post-09.jpg"
+          alt="Tanvi — Fashion &amp; Lifestyle Creator"
+          class="hero-img"
+          id="heroImg"
+          onerror="this.classList.add('img-fallback'); this.alt='';">
+        <div class="hero-media-frame" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <a href="#stats" class="scroll-cue" aria-label="Scroll to explore">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 2. QUICK STATS                -->
+  <!-- ============================= -->
+  <section class="stats" id="stats">
+    <div class="stats-inner" data-reveal>
+      <div class="stat-item">
+        <span class="stat-num">7,933</span>
+        <span class="stat-label">Followers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">Fashion</span>
+        <span class="stat-label">Primary Niche</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">Navi Mumbai</span>
+        <span class="stat-label">Based In</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">21</span>
+        <span class="stat-label">Creator</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 3. ABOUT                      -->
+  <!-- ============================= -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-media" data-reveal>
+        <!-- Autoplays when scrolled into view, pauses when scrolled out -->
+        <video
+          id="aboutVideo"
+          class="about-img"
+          src="images/reel-07.mp4"
+          muted
+          loop
+          playsinline
+          preload="metadata">
+        </video>
+      </div>
+
+      <div class="about-copy" data-reveal>
+        <p class="eyebrow">A Little About Me</p>
+        <p class="about-lead">I'm Tanvi, a fashion &amp; lifestyle creator based in Navi Mumbai. I create outfit styling, aesthetic slow-motion reels and fit-check content designed to make fashion feel inspiring, effortless and wearable.</p>
+        <p class="about-body">My content combines clean visuals, thoughtful styling and engaging short-form storytelling to help fashion brands present their products in a way that feels natural, aspirational and relevant to today's audience.</p>
+
+        <dl class="about-details">
+          <div class="about-detail">
+            <dt>Based</dt>
+            <dd>Navi Mumbai, India</dd>
+          </div>
+          <div class="about-detail">
+            <dt>Age</dt>
+            <dd>21</dd>
+          </div>
+          <div class="about-detail">
+            <dt>Niche</dt>
+            <dd>Fashion &amp; Lifestyle</dd>
+          </div>
+          <div class="about-detail">
+            <dt>Focus</dt>
+            <dd>Clothing &middot; Jewellery &middot; Bags &middot; Footwear</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 4. CONTENT / PORTFOLIO        -->
+  <!-- ============================= -->
+  <section class="content-section" id="content">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">My Content</p>
+      <h2 class="section-title">Fashion, styling &amp; visual stories.</h2>
+    </div>
+
+    <!-- ===== FEATURED REELS & POSTS ===== -->
+    <div class="content-sub-head" data-reveal>
+      <h3 class="content-sub-title">Featured Reels &amp; Posts</h3>
+    </div>
+
+    <div class="featured-grid" id="featuredGrid">
+      <!-- Cards are rendered by script.js from the FEATURED_ITEMS array. -->
+      <!-- To add or change links: edit FEATURED_ITEMS at the top of script.js -->
+    </div>
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- 5. WHAT I CREATE              -->
+  <!-- ============================= -->
+  <section class="formats">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">What I Create</p>
+      <h2 class="section-title">Four ways I bring fashion to life.</h2>
+    </div>
+
+    <div class="formats-grid" data-reveal>
+      <article class="format-card">
+        <span class="format-index">01</span>
+        <h3>Outfit Styling</h3>
+        <p>Fashion-forward outfit showcases designed to highlight clothing through natural styling.</p>
+      </article>
+      <article class="format-card">
+        <span class="format-index">02</span>
+        <h3>Aesthetic Reels</h3>
+        <p>Cinematic short-form videos with clean transitions, movement and visually engaging compositions.</p>
+      </article>
+      <article class="format-card">
+        <span class="format-index">03</span>
+        <h3>Fit Checks</h3>
+        <p>Relatable fashion content that showcases complete looks and encourages audience interaction.</p>
+      </article>
+      <article class="format-card">
+        <span class="format-index">04</span>
+        <h3>Product Focused Content</h3>
+        <p>Creative visual content designed to naturally feature clothing, jewellery, bags and footwear.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 6. BRAND CATEGORIES           -->
+  <!-- ============================= -->
+  <section class="brands">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Who I Work With</p>
+      <h2 class="section-title">Brands I love to create for.</h2>
+    </div>
+
+    <div class="brands-grid" data-reveal>
+      <article class="brand-card">
+        <span class="brand-mark" aria-hidden="true">I</span>
+        <h3>Clothing</h3>
+        <p>Outfit styling, try-ons, lookbooks and fashion reels.</p>
+      </article>
+      <article class="brand-card">
+        <span class="brand-mark" aria-hidden="true">II</span>
+        <h3>Jewellery</h3>
+        <p>Close-up styling, layering, detail shots and fashion integration.</p>
+      </article>
+      <article class="brand-card">
+        <span class="brand-mark" aria-hidden="true">III</span>
+        <h3>Bags</h3>
+        <p>Outfit + bag styling, product showcases and aesthetic reels.</p>
+      </article>
+      <article class="brand-card">
+        <span class="brand-mark" aria-hidden="true">IV</span>
+        <h3>Footwear</h3>
+        <p>Complete-look styling, transitions and product-focused content.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 7. WHY WORK WITH ME           -->
+  <!-- ============================= -->
+  <section class="why">
+    <div class="why-grid">
+      <div class="why-copy" data-reveal>
+        <p class="eyebrow">Why Tanvi?</p>
+        <h2 class="section-title">A fashion-first creative partner.</h2>
+      </div>
+
+      <div class="why-list" data-reveal>
+        <div class="why-item">
+          <h3>Clean Visuals</h3>
+          <p>A polished aesthetic designed to make products visually memorable.</p>
+        </div>
+        <div class="why-item">
+          <h3>Fashion-First Storytelling</h3>
+          <p>Content naturally built around styling and wearable fashion.</p>
+        </div>
+        <div class="why-item">
+          <h3>Relatable Creator Presence</h3>
+          <p>Content that feels authentic rather than overly commercial.</p>
+        </div>
+        <div class="why-item">
+          <h3>Creative Flexibility</h3>
+          <p>From aesthetic reels to fit checks and product-focused styling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 8. COLLABORATION / SERVICES   -->
+  <!-- ============================= -->
+  <section class="services" id="services">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Collaboration</p>
+      <h2 class="section-title">Let's create something beautiful.</h2>
+    </div>
+
+    <div class="services-list" data-reveal id="collaborate">
+      <div class="service-item"><span>Instagram Reels</span></div>
+      <div class="service-item"><span>Outfit Styling</span></div>
+      <div class="service-item"><span>Product Features</span></div>
+      <div class="service-item"><span>Fit Check Content</span></div>
+      <div class="service-item"><span>UGC-Style Fashion Content</span></div>
+      <div class="service-item"><span>Campaign Content</span></div>
+      <div class="service-item"><span>Product Photography</span></div>
+      <div class="service-item"><span>Styling Videos</span></div>
+    </div>
+
+    <div class="services-cta" data-reveal>
+      <a href="#contact" class="btn btn-primary">Discuss a Collaboration</a>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 9. MEDIA KIT CTA              -->
+  <!-- ============================= -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner" data-reveal>
+      <h2>Your brand. My style.<br>One visual story.</h2>
+      <p>Looking for fashion-focused content that feels aesthetic, authentic and made for today's social audience? Let's create something together.</p>
+      <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 10. CONTACT                   -->
+  <!-- ============================= -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="eyebrow">Let's Work Together</p>
+        <h2 class="section-title">Get in touch.</h2>
+        <p class="contact-lead">For clothing, jewellery, bags, footwear and fashion campaigns, I'd love to hear from you.</p>
+
+        <div class="contact-detail">
+          <span class="contact-label">Instagram</span>
+          <a href="https://www.instagram.com/tanvi_thakur__7/" target="_blank" rel="noopener" class="contact-value contact-link">@tanvi_thakur__7</a>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-label">Email</span>
+          <!-- Replace this placeholder with your real email address -->
+          <span class="contact-value">[YOUR EMAIL HERE]</span>
+        </div>
+
+        <a href="https://www.instagram.com/tanvi_thakur__7/" target="_blank" rel="noopener" class="btn btn-primary contact-ig-btn">
+          Message on Instagram
+        </a>
+      </div>
+
+      <div class="contact-form-wrap" data-reveal>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="fbrand">Brand / Company</label>
+            <input type="text" id="fbrand" name="brand" autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="ftype">Collaboration Type</label>
+            <select id="ftype" name="type">
+              <option value="">Select an option</option>
+              <option>Instagram Reels</option>
+              <option>Outfit Styling</option>
+              <option>Product Features</option>
+              <option>Fit Check Content</option>
+              <option>UGC-Style Fashion Content</option>
+              <option>Campaign Content</option>
+              <option>Product Photography</option>
+              <option>Styling Videos</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= -->
+<!-- FOOTER                        -->
+<!-- ============================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="footer-logo">Tanvi</a>
+      <p>Fashion &amp; Lifestyle Creator</p>
+      <p>Navi Mumbai, India</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#content">Content</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <span class="contact-label">Instagram</span>
+      <a href="https://www.instagram.com/tanvi_thakur__7/" target="_blank" rel="noopener">@tanvi_thakur__7</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Tanvi. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
